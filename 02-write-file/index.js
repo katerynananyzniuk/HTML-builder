@@ -25,3 +25,8 @@ rl.on('line', line => {
       process.exit(0);
     } 
 });
+
+rl.on('SIGINT', () => {
+  console.log('Bye!');
+  process.exit(0);
+});
